@@ -1,7 +1,12 @@
 # GYM-Membership-System
 
 ## Description
-This is a Java implementation of the GYM Membership System. MySQL database is used in this project. The GYM Membership system allows users to.
+This is a Java implementation of the GYM Membership System. MySQL database is used in this project. 
+
+The GYM Membership system allows users to:
+- Sign in to the GYM Membership System
+- Login to view and change their informations.
+- Secret admin access for accessing the members' informations, signing up new ones, and accessing the database tables. 
 
 ## Installation
 - Firstly, database must be injected to MySQL. You must create a new schema and name it as 'gymmembership'.
