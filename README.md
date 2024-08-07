@@ -25,9 +25,11 @@ In this screen you can "sign up", "login" into your account as a customer or you
    To login as admin you should enter admin as both username and password. 
    
    Admin panel let's user to:
-      - View database tables (gym, personal trainer, member, membership)
-      - Sign up a new person into the GYM.
-      - Go to the person's page with only their IDs. (without password)
+      
+  - View database tables (gym, personal trainer, member, membership)
+  - Sign up a new person into the GYM.
+  - Go to the person's page with only their IDs. (without password)
+
   ### Sign Up
    This button directs user to the sign up page where the user gives their information to sign up to the GYM.
    
