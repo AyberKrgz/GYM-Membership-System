@@ -39,9 +39,10 @@ In this screen you can "sign up", "login" into your account as a customer or you
    This button directs user to the sign up page where the user gives their information to sign up to the GYM.
    
    User must fill all the information to sign up. 
-      PERSONAL INFORMATIONS: Name, Surname, ID, Phone Number
-      MEMBERSHIP INFORMATIONS: Branch Name, Membership Type, Membership Duration, Personal Trainer selection
-      PHYSICAL INFORMATIONS: Height, Weight
+   
+    PERSONAL INFORMATIONS: Name, Surname, ID, Phone Number
+    MEMBERSHIP INFORMATIONS: Branch Name, Membership Type, Membership Duration, Personal Trainer selection
+    PHYSICAL INFORMATIONS: Height, Weight
 
 NOTE:
     
