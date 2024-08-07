@@ -16,22 +16,22 @@ This is a Java implementation of the GYM Membership System. MySQL database is us
   In this screen you can sign up, log into your account as a customer or you can log in as admin. 
 
   ### Admin Login
-    To login as admin you should enter admin as both username and password. Admin panel let's user to:
+   To login as admin you should enter admin as both username and password. Admin panel let's user to:
       - View database tables (gym, personal trainer, member, membership)
       - Sign up a new person into the GYM.
       - Go to the person's page with only their IDs. (without password)
   ### Sign Up
-    This button directs user to the sign up page where the user gives their information to sign up to the GYM.
-    User must fill all the information to sign up. 
+   This button directs user to the sign up page where the user gives their information to sign up to the GYM.
+   User must fill all the information to sign up. 
       PERSONAL INFORMATIONS: Name, Surname, ID, Phone Number
       MEMBERSHIP INFORMATIONS: Branch Name, Membership Type, Membership Duration, Personal Trainer selection
       PHYSICAL INFORMATIONS: Height, Weight
 
-    NOTE: After the user completes their sign up their username will be set as their ID and their password will be set as their Phone Number.
+  !! NOTE: After the user completes their sign up their username will be set as their ID and their password will be set as their Phone Number.
 
   ### Login
-    To access to their information, user must login to the GYM Membership System with their Username (ID) and their password (Phone Number).
-    If the user logs in successfully, 'MembershipInformation.java' screen will welcome them.
+   To access to their information, user must login to the GYM Membership System with their Username (ID) and their password (Phone Number).
+   If the user logs in successfully, 'MembershipInformation.java' screen will welcome them.
       In this screen they can see their personal informations, informations about their membership, and their pyhsical informations.
       They can also change their personal trainer, and edit their Weight and Height if they are changed.
       And finally, they can delete their account if they wish.
