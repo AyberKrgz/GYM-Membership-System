@@ -52,7 +52,8 @@ In this screen you can "sign up", "login" into your account as a customer or you
 
 
   ### Login
-   To access to their information, user must login to the GYM Membership System with their Username (ID) and their password (Phone Number).
+   To access to their information, user must login to the GYM Membership System with their 
+   Username (ID) and their password (Phone Number).
    
    If the user logs in successfully, 'MembershipInformation.java' screen will welcome them.
       In this screen they can see their personal informations, informations about their membership, and their pyhsical informations.
