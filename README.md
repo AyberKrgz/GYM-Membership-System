@@ -29,9 +29,9 @@ In this screen you can "sign up", "login" into your account as a customer or you
    
    Admin panel let's user to:
       
-  - View database tables (gym, personal trainer, member, membership)
-  - Sign up a new person into the GYM.
-  - Go to the person's page with only their IDs. (without password)
+  -- View database tables (gym, personal trainer, member, membership)
+  -- Sign up a new person into the GYM.
+  -- Go to the person's page with only their IDs. (without password)
 
 
 
