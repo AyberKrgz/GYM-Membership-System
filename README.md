@@ -44,7 +44,7 @@ In this screen you can "sign up", "login" into your account as a customer or you
    - MEMBERSHIP INFORMATIONS: Branch Name, Membership Type, Membership Duration, Personal Trainer selection
    - PHYSICAL INFORMATIONS: Height, Weight
 
-####NOTE:
+#### NOTE:
     
     After the user completes their sign up their username will be set as their ID and 
     their password will be set as their Phone Number.
