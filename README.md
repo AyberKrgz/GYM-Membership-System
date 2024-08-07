@@ -12,8 +12,8 @@ This is a Java implementation of the GYM Membership System. MySQL database is us
 - Finally, you can run the project trough 'GYM_Project.java' file and enjoy the GYM Membership System.
 
 ## How To Use
-  After you run the 'GYM_Project.java' the login screen welcomes you. 
-  In this screen you can sign up, log into your account as a customer or you can log in as admin. 
+After you run the 'GYM_Project.java' the login screen welcomes you. 
+In this screen you can sign up, log into your account as a customer or you can log in as admin. 
 
   ### Admin Login
    To login as admin you should enter admin as both username and password. Admin panel let's user to:
