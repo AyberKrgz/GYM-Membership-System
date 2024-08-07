@@ -54,15 +54,14 @@ In this screen you can "sign up", "login" into your account as a customer or you
   ### Login
 To access to their information, user must login to the GYM Membership System with their 
 Username (ID) and their password (Phone Number).
-   
 If the user logs in successfully, 'MembershipInformation.java' screen will welcome them.
 
    
-   In this screen they can see their personal informations, informations about their membership, and their pyhsical informations.
-  
-   They can also change their personal trainer, and edit their Weight and Height if they are changed.
-  
-   And finally, they can delete their account if they wish.
+   In this screen they can:
+   - See their personal informations, informations about their membership, and their pyhsical informations.
+   - Change their personal trainer
+   - Edit their Weight and Height if they are changed
+   - Delete their account if they wish.
         
 
 
