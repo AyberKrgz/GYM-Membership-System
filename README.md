@@ -16,10 +16,13 @@ The GYM Membership system allows users to:
 - To gain access to your database you must change your username and password as your MySQL root name and password in 'DatabaseConnector.java' file.
 - Finally, you can run the project trough 'GYM_Project.java' file and enjoy the GYM Membership System.
 
+
 ## How To Use
 After you run the 'GYM_Project.java' the login screen welcomes you. 
 
 In this screen you can "sign up", "login" into your account as a customer or you can log in as "admin". 
+
+
 
   ### Admin Login
    To login as admin you should enter admin as both username and password. 
@@ -30,6 +33,8 @@ In this screen you can "sign up", "login" into your account as a customer or you
   - Sign up a new person into the GYM.
   - Go to the person's page with only their IDs. (without password)
 
+
+
   ### Sign Up
    This button directs user to the sign up page where the user gives their information to sign up to the GYM.
    
@@ -39,6 +44,8 @@ In this screen you can "sign up", "login" into your account as a customer or you
       PHYSICAL INFORMATIONS: Height, Weight
 
     NOTE: After the user completes their sign up their username will be set as their ID and their password will be set as their Phone Number.
+
+
 
   ### Login
    To access to their information, user must login to the GYM Membership System with their Username (ID) and their password (Phone Number).
@@ -58,6 +65,7 @@ Contributions are welcome! If you'd like to improve this Minesweeper game, feel 
 
 ## Credits
 - [Ayberk Karagöz](https://github.com/AyberKrgz)
-- Gül Yasemin
+- [Oğuzhan Altın](https://github.com/oguzhanaltin1903)
+- [Gül Yasemin](https://github.com/gulysmn)
 - İrem Beşiroğlu
-- Oğuzhan Altın
+
