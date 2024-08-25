@@ -5,8 +5,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.*;
 
-
-
 public class DatabaseConnector {
     
     public static Connection connect() {
@@ -15,7 +13,9 @@ public class DatabaseConnector {
         try {
             // Load the JDBC driver
             Class.forName("com.mysql.cj.jdbc.Driver");
-            
+
+            //TODO: Change your username and password!
+
             // Establish the connection
             String url = "jdbc:mysql://localhost:3306/gymmembership";
             String username = "username";                                                   //You have to change "username" to your database root name. 
