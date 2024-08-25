@@ -239,11 +239,11 @@ public class AdminPage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jComboBox2ActionPerformed
 
     private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jComboBox3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -261,7 +261,6 @@ public class AdminPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
         
         String bos = "";
         String ID = jTextField11.getText();
@@ -278,27 +277,23 @@ public class AdminPage extends javax.swing.JFrame {
         else if( ((String) jComboBox2.getSelectedItem()).equals("Go to the Person's Page") && !(ID.equals(bos)) && databaseIncludes(ID) ){
             
             MemberInformation InformationFrame = new MemberInformation(ID);
-                            InformationFrame.setVisible(true);
-                            InformationFrame.pack();
-                            InformationFrame.setLocationRelativeTo(null);
-                            this.dispose();
+            InformationFrame.setVisible(true);
+            InformationFrame.pack();
+            InformationFrame.setLocationRelativeTo(null);
+            this.dispose();
             
         }
         else{
             
             jLabel11.setText("Invalid ID!!!");
-            
-            
-            
-            
+
         }
-        
-        
-        
+
     }//GEN-LAST:event_jButton3ActionPerformed
 
     
     public static boolean databaseIncludes(String id) {
+
         String query = "SELECT COUNT(*) FROM member WHERE mID = ?";
 
         try (Connection connection = DatabaseConnector.connect();
@@ -320,11 +315,9 @@ public class AdminPage extends javax.swing.JFrame {
 
         // If an exception occurs or the ID is not found, return false
         return false;
+
     }
-    
-    
-    
-    
+
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         
@@ -372,9 +365,7 @@ public class AdminPage extends javax.swing.JFrame {
             // Handle the exception according to your application's needs
         }
     }
-        
-        
-        
+
         
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -385,37 +376,6 @@ public class AdminPage extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AdminPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AdminPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AdminPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AdminPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new AdminPage().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Left3;

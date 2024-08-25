@@ -7,13 +7,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
-
 public class SignUp extends javax.swing.JFrame {
 
     public SignUp() {
         initComponents();
     }
-
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -374,7 +372,6 @@ public class SignUp extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
         
         //Sign up işlemlerini yap!!!!
         String bos = "";
@@ -382,11 +379,9 @@ public class SignUp extends javax.swing.JFrame {
         if( !(new String(jTextField1.getText()).equals(bos))    && !(new String(jTextField5.getText()).equals(bos))
          && !(new String(jTextField6.getText()).equals(bos))    && !(new String(jTextField8.getText()).equals(bos))
          && !(new String(jTextField11.getText()).equals(bos))   && !(new String(jTextField12.getText()).equals(bos))){
-            
-            
+
         String selectedTrainerName = (String) jComboBox1.getSelectedItem();
         String[] trainerName = selectedTrainerName.split(" ");
-        
 
         // SQL query to retrieve trainer_id based on trainer_name
         String selectQuery = "SELECT trainer_ID FROM personaltrainer WHERE name = ? and surname = ?";
@@ -414,12 +409,8 @@ public class SignUp extends javax.swing.JFrame {
         } catch (SQLException e) {
             e.printStackTrace(); // Handle the exception according to your application's needs
         }
-        
-        
-        
-        
-        
-        
+
+
         try {
         // Establish a database connection
         Connection connection = DatabaseConnector.connect();
@@ -442,8 +433,6 @@ public class SignUp extends javax.swing.JFrame {
             preparedStatement.setString(7, jComboBox2.getItemAt(jComboBox2.getSelectedIndex())); 
             preparedStatement.setInt(8,trainerId);
             
-            
-            
             // Execute the query
             preparedStatement.executeUpdate();
             
@@ -457,15 +446,7 @@ public class SignUp extends javax.swing.JFrame {
     } catch (SQLException e) {
         e.printStackTrace();
     }
-    
-            
-            
-        
-        
-        
-        
-        
-        
+
         String membershipDuration = (String) jComboBox3.getSelectedItem();
             String membershipType = (String) jComboBox4.getSelectedItem();
             String mPhone = jTextField6.getText();
@@ -490,87 +471,41 @@ public class SignUp extends javax.swing.JFrame {
             } catch (SQLException e) {
                 e.printStackTrace(); // Handle the exception according to your application's needs
             }
-            
-            
-            
-            
-            
-            
-      
-            
-            
+
             JOptionPane.showMessageDialog(null, "Your Username is your ID \n"
                                               + "Your Password is your Phone Number");
-            
             Login LoginFrame = new Login();
             LoginFrame.setVisible(true);
             LoginFrame.pack();
             LoginFrame.setLocationRelativeTo(null); //center
             this.dispose();
             
-            
-            
-            
         }else{
             JOptionPane.showMessageDialog(null, "You have to fill all informantions!!");
             
         }
-        
-        
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-        
-        
-        
-        
+
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
     private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jTextField11ActionPerformed
 
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jComboBox2ActionPerformed
 
     private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jComboBox3ActionPerformed
 
     private void jComboBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox4ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jComboBox4ActionPerformed
-
- 
-    public static void main(String args[]) {
-        
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SignUp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SignUp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SignUp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SignUp.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new SignUp().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;

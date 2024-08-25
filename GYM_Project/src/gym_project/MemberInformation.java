@@ -92,15 +92,6 @@ public class MemberInformation extends javax.swing.JFrame {
         }
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
         String query2 = "SELECT * FROM personaltrainer WHERE trainer_ID = ?";
 
         try (Connection connection = DatabaseConnector.connect();
@@ -131,44 +122,9 @@ public class MemberInformation extends javax.swing.JFrame {
         } catch (SQLException e) {
             e.printStackTrace(); // Handle the exception according to your application's needs
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    
-        
-    
-    
-    
-    
-    
-        
-        
+
     }
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-    
-   
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -488,9 +444,7 @@ public class MemberInformation extends javax.swing.JFrame {
         LoginFrame.pack();
         LoginFrame.setLocationRelativeTo(null); //center
         this.dispose();
-        
-        
-        
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -502,19 +456,14 @@ public class MemberInformation extends javax.swing.JFrame {
                 null,
                 personalTrainers,
                 personalTrainers[0]);
-
-        
-        
         
         // If a trainer is selected, update the text field with the selected trainer
         if (selectedTrainerName != null) {
-            
-            
+
             
             String[] trainerName = selectedTrainerName.split(" ");
             
             String memberId = jLabel26.getText();
-
 
             // SQL query to retrieve trainer_id based on trainer_name
             String selectQuery = "SELECT trainer_ID FROM personaltrainer WHERE name = ? and surname = ?";
@@ -542,9 +491,7 @@ public class MemberInformation extends javax.swing.JFrame {
             } catch (SQLException e) {
                 e.printStackTrace(); // Handle the exception according to your application's needs
             }
-            
-            
-            
+
             try {
            // Your SQL query to update the mPhone for a member
            String updateQuery = "UPDATE member SET trainer_id = ? WHERE mID = ?";
@@ -570,17 +517,7 @@ public class MemberInformation extends javax.swing.JFrame {
             } catch (SQLException e) {
                 e.printStackTrace(); // Handle the exception according to your application's needs
             }
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+
              jLabel17.setText(selectedTrainerName);
         
         }
@@ -588,7 +525,7 @@ public class MemberInformation extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+
           String newHeight = JOptionPane.showInputDialog("Enter new Height:");
           
           String memberId = jLabel26.getText();
@@ -631,7 +568,7 @@ public class MemberInformation extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
+
          String newWeight = JOptionPane.showInputDialog("Enter new Weight:");
          
          String memberId = jLabel26.getText();
