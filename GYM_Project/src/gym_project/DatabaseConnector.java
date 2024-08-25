@@ -21,7 +21,7 @@ public class DatabaseConnector {
             // Establish the connection
             String url = "jdbc:mysql://localhost:3306/gymmembership";
             String username = "username";                                                       //You have to change "username" to your database root name.
-            String password = "password";                                                   //You have to change "password" to your database password.
+            String password = "password";                                                       //You have to change "password" to your database password.
             connection = DriverManager.getConnection(url, username, password);
 
             System.out.println("Connected to the MySQL database!");
