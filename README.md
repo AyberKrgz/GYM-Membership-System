@@ -21,7 +21,7 @@ After you run the 'GYM_Project.java' the login screen welcomes you.
 In this screen you can "sign up", "login" into your account as a customer or you can log in as "admin". 
 
   ### Database Login
-   User must login to the database using their root name and password.
+    User must login to the database using their root name and password.
  
   ### Admin Login
    To login as admin you should enter admin as both username and password. 
