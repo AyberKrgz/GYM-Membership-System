@@ -11,10 +11,8 @@ The GYM Membership system allows users to:
 ## Installation
 - Firstly, database must be injected to MySQL. You must create a new schema and name it as 'gymmembership'.
 - Then, you have to import the dump file named 'DATABASEE' that we provided in the files.
-- After that, you have to open the project through your Java IDE. (Netbeans recommended.)
-- Then you have to import the database connector into your project libraries. The database connector is also provided in the project files. ('mysql-connector-j-8.1.0.jar')
-- To gain access to your database you must change your username and password as your MySQL root name and password in 'DatabaseConnector.java' file.
-- Finally, you can run the project trough 'GYM_Project.java' file and enjoy the GYM Membership System.
+- To run the project properly, you must install JDK-21.
+- After that, you execute the jar file located at the file named 'out'.
 
 
 ## How To Use
@@ -22,8 +20,9 @@ After you run the 'GYM_Project.java' the login screen welcomes you.
 
 In this screen you can "sign up", "login" into your account as a customer or you can log in as "admin". 
 
-
-
+  ### Database Login
+   User must login to the database using their root name and password.
+ 
   ### Admin Login
    To login as admin you should enter admin as both username and password. 
    
