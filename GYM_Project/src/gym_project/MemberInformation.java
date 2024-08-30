@@ -296,8 +296,8 @@ public class MemberInformation extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(590, 440, 80, 23);
 
-        jButton2.setBackground(new java.awt.Color(0, 255, 255));
-        jButton2.setForeground(new java.awt.Color(51, 51, 51));
+        jButton2.setBackground(new java.awt.Color(102, 102, 102));
+        jButton2.setForeground(new java.awt.Color(0, 255, 255));
         jButton2.setText("Log Out");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
