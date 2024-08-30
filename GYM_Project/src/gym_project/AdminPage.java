@@ -50,10 +50,11 @@ public class AdminPage extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(800, 500));
+        setPreferredSize(new java.awt.Dimension(800, 550));
 
         Left3.setBackground(new java.awt.Color(51, 51, 51));
-        Left3.setPreferredSize(new java.awt.Dimension(400, 700));
+        Left3.setMinimumSize(new java.awt.Dimension(400, 550));
+        Left3.setPreferredSize(new java.awt.Dimension(400, 550));
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icon/Aerox.png"))); // NOI18N
 
@@ -85,8 +86,8 @@ public class AdminPage extends javax.swing.JFrame {
 
         Right.setBackground(new java.awt.Color(255, 255, 255));
         Right.setForeground(new java.awt.Color(204, 204, 204));
-        Right.setMinimumSize(new java.awt.Dimension(400, 500));
-        Right.setPreferredSize(new java.awt.Dimension(400, 700));
+        Right.setMinimumSize(new java.awt.Dimension(400, 550));
+        Right.setPreferredSize(new java.awt.Dimension(400, 550));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 255, 255));
