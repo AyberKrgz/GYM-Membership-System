@@ -124,7 +124,7 @@ public class AdminPage extends javax.swing.JFrame {
 
         jComboBox_Operation.setBackground(new java.awt.Color(204, 204, 204));
         jComboBox_Operation.setForeground(new java.awt.Color(51, 51, 51));
-        jComboBox_Operation.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sign Up a New Person", "Go to the Person's Page" }));
+        jComboBox_Operation.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Go to the Person's Page", "Sign Up a New Person" }));
         jComboBox_Operation.setMinimumSize(new java.awt.Dimension(82, 22));
         jComboBox_Operation.setPreferredSize(new java.awt.Dimension(82, 22));
         jComboBox_Operation.addActionListener(new java.awt.event.ActionListener() {
